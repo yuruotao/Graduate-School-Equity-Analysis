@@ -48,7 +48,7 @@ dir.create(file.path(working_directory, output_report_dir), showWarnings = FALSE
 # Load readxl package for later import of excel files
 library("readxl")
 # The parameter "sheet_name" specifies the sheet to read
-data_file = read_excel(paste(working_directory, "/data/南开大学.xlsx", sep=""), sheet="2022")
+data_file = read_excel(paste(working_directory, "/data/电子科技大学.xlsx", sep=""), sheet="2021")
 
 ##############################################################################################
 # Raw data analysis
