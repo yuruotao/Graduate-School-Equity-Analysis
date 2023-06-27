@@ -48,7 +48,7 @@ dir.create(file.path(working_directory, output_report_dir), showWarnings = FALSE
 # Load readxl package for later import of excel files
 library("readxl")
 # The parameter "sheet_name" specifies the sheet to read
-data_file = read_excel(paste(working_directory, "/data/天津大学.xlsx", sep=""), sheet="2023")
+data_file = read_excel(paste(working_directory, "/data/南开大学.xlsx", sep=""), sheet="2022")
 
 ##############################################################################################
 # Raw data analysis
@@ -134,4 +134,4 @@ cor_num_num_fig = ggplot(data = cor_num_num_data,aes(x=Parameter1, y=Parameter2,
   )
 
 plot(cor_num_num_fig)
-#ggsave(paste(correlation_dir,"/cor_num_num",".png",sep = ""), plot = cor_num_num_fig)
+ggsave(paste(correlation_dir,"/cor_num_num",".png",sep = ""), plot = cor_num_num_fig)
